@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Molina | Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@300;400;500;600;700;800&family=Thasadith:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+       
+      <!-- ACÁ EMPIEZA EL MENÚ -->
+    
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="text-container" style="background: linear-gradient(180deg, rgba(238,40,125,1) 0%, rgba(134,20,68,1) 100%);">
+          <p class="animated-text">Promos todos los días</p>
+      </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./imagenes/Logo.png" alt="logo"></a>
+          <button class="navbar-toggler m-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon p-4"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> 
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="menu.html">Menú</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="locales.html">Locales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="promociones.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    
+    <div class="contenedor promos">
+      <div class="card promos">
+       <p class="card-text promos">Aquí encontrás todas nuestras promos disponibles</p>
+        <img class="img-fluid promos" src="./imagenes/recursopromo2.png" style="height: 356px; width: 240px;" alt="">
+
+      </div>
+    </div>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" style=" margin-top: 10px ; margin-left: 0px; margin-right: 0px; margin-bottom: 40px;" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner promos">
+        <div class="carousel-item active">
+          <img src="./imagenes/promo1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/promo2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/promo3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="card-group p-5">
+      <div class="card promo" style="background-color: rgb(0, 204, 255);">
+        <img src="./imagenes/promo5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text promo">Si pasás por nuestro local hasta las 8 a.m., nosotros regalamos el café.</p>
+        </div>
+      </div>
+      <div class="card promo" style="background-color: rgb(255, 105, 205);">
+        <img src="./imagenes/promo4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text promo">Lunes de 2x1 en nuestras galletitas</p>
+          
+        </div>
+      </div>
+      <div class="card promo" style="background-color: rgb(240, 226, 98);">
+        <img src="./imagenes/promos6.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text promo">Viernes amistoso: vení con un amigo y duplicá el postre</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="card-body reward">
+        <p class="card-text reward">No olvides reclamar tu tarjeta de fidelidad la próxima vez que nos visites</p>
+      </div>
+      <img src="./imagenes/reward_1.png" class="card-img-top" alt="...">
+      
+    </div>
+    
+
+    <footer>
+      <div class="card m-0" style="max-width: 100%; background-color: #023059;">
+        <div class="row g-0">
+          <div class="col-md-4 p-5">
+           <a href="index.html"> <img src="./imagenes/logofooter.png" class="img-fluid rounded-start" alt="..." style="width: 241px; height: 195px;"></a>
+          </div>
+          <div class="col-md-4">
+            <div class="card-body p-5">
+              <a href="historia.html"><p class="card-text" style="color: white;">HISTORIA</p></a>
+             <a href="menu.html"> <p class="card-text" style="color: white;">MENÚ</p></a>
+             <a href="locales.html"> <p class="card-text" style="color: white;">LOCALES</p></a>
+              <a href="promociones.html"><p class="card-text" style="color: white;">PROMOCIONES</p></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-body p-5">
+              <a href="contacto.html"><p class="card-text" style="color: white;">CONTACTO</p></a>
+              <p class="card-text" style="color: white;">3333-3333</p>
+              <p class="card-text" style="color: white;">molina@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+     </footer>
+      
+    </body>
+    </html>

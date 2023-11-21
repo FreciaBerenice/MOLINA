@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Molina | Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@300;400;500;600;700;800&family=Thasadith:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+  <body>
+   
+       
+      <!-- ACÁ EMPIEZA EL MENÚ -->
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="text-container" style="background:linear-gradient(0deg, rgba(72,164,157,1) 33%, rgba(174,246,249,1) 100%);">
+          <p class="animated-text">Presentes en todo C.A.B.A</p>
+      </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./imagenes/Logo.png" alt="logo"></a>
+          <button class="navbar-toggler m-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon p-4"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> 
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="menu.html">Menú</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="locales.html">Locales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="promociones.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="contenedor local" >
+        <div class="card-local"  style="background-color:rgba(0, 234, 255, 0);">
+         <p class="card-text local" style="color: rgb(18, 46, 36);font-weight: 60;" >Nuestros locales</p>
+        </div>
+      </div>
+   
+      
+      <div class="card-group locales">
+        <div class="card locales">
+          <img src="./imagenes/local1.png" class="cardlocales-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">BELGRANO</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+            
+          </div>
+        </div>
+        
+        <div class="card locales">
+          <img src="./imagenes/local2.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">CHACABUCO</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+            
+          </div>
+        </div>
+        
+        <div class="card locales">
+          <img src="./imagenes/local3.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">CID CAMPEADOR</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card-group">
+        <div class="card locales">
+          <img src="./imagenes/local4.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">COGHLAN</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+            
+          </div>
+        </div>
+        <div class="card locales">
+          <img src="./imagenes/local5.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">COLEGIALES</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+            
+          </div>
+        </div>
+        <div class="card locales">
+          <img src="./imagenes/local6.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">DEVOTO</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card locales">
+          <img src="./imagenes/local7.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">HONDURAS</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+            </div>
+            </div>
+            
+        <div class="card locales">
+          <img src="./imagenes/local8.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">MATADEROS</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636/p> 
+          </div>
+        </div>
+       
+        <div class="card locales">
+          <img src="./imagenes/lcal9.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">MONTECASTRO/h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card locales">
+          <img src="./imagenes/local10.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">PALERMO</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+            
+          </div>
+        </div>
+        <div class="card locales">
+          <img src="./imagenes/local11.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">RECOLETA</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+            
+          </div>
+        </div>
+        <div class="card locales">
+          <img src="./imagenes/local12.png" class="card-img-top" alt="...">
+          <div class="card-body locales">
+            <h5 class="card-title">SAAVEDRA</h5>
+            <p class="card-text">11 DE SEPTIEMBRE 2490
+              1131412636</p>
+          </div>
+        </div>
+      </div>
+    
+        
+      
+      <footer>
+        <div class="card m-0" style="max-width: 100%; background-color: #023059;">
+          <div class="row g-0">
+            <div class="col-md-4 p-5">
+             <a href="index.html"> <img src="./imagenes/logofooter.png" class="img-fluid rounded-start" alt="..." style="width: 241px; height: 195px;"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body p-5">
+                <a href="historia.html"><p class="card-text" style="color: white;">HISTORIA</p></a>
+               <a href="menu.html"> <p class="card-text" style="color: white;">MENÚ</p></a>
+               <a href="locales.html"> <p class="card-text" style="color: white;">LOCALES</p></a>
+                <a href="promociones.html"><p class="card-text" style="color: white;">PROMOCIONES</p></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body p-5">
+                <a href="contacto.html"><p class="card-text" style="color: white;">CONTACTO</p></a>
+                <p class="card-text" style="color: white;">3333-3333</p>
+                <p class="card-text" style="color: white;">molina@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+       </footer>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+      </body>
+      </html>
+        
+        
+        
+        
+      
+    
+    
+
+    
+    
+    
+    

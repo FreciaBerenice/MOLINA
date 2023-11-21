@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Molina | Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@300;400;500;600;700;800&family=Thasadith:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+        
+      
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="text-container" style="background: linear-gradient(180deg, rgba(62,247,126,1) 0%, rgba(66,128,87,1) 100%);">
+          <p class="animated-text">Date un gustito</p>
+      </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./imagenes/Logo.png" alt="logo"></a>
+          <button class="navbar-toggler m-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon p-4"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> 
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="menu.html">Menú</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="locales.html">Locales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="promociones.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    
+      <div id="carouselExampleSlidesOnly" class="carousel slide m-0" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/carrumenu.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/carrumenu2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/carrumenu3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion accordion-flush p-2" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              CAFETERÍA
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <img class="img-fluid p-5" style="width: 100%; height: 100%;" src="./imagenes/menu1.png" alt="">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              PANADERÍA
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <img class="img-fluid p-5" style="width: 100%; height: 100%;" src="./imagenes/menu2.png" alt="">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              BAR
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <img class="img-fluid p-5" style="width: 100%; height: 100%;" src="./imagenes/menu3.png" alt="">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              DE TODO UN POQUITO
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <img class="img-fluid p-5" style="width: 100%; height: 100%;" src="./imagenes/menu4.png" alt="">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              ALMUERZOS
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <img class="img-fluid p-5" style="width: 100%; height: 100%;" src="./imagenes/menu5.png" alt="">
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              BEBIDAS FRÍAS Y JUGOS
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <img class="img-fluid p-5" style="width: 100%; height: 100%;" src="./imagenes/menu6.png" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <!-- <div class="container">
+        <h1 class="mt-4 mb-4 p-2" style="color: #8C423B; font-family: Montserrat; font-weight: 500;">¿NO SABÉS QUÉ PEDIR?</h1>
+        <img class="img-fluid" style="height: 400px; width: 400px;" src="./imagenes/200w.gif" alt="">
+        <p class="p-2" style="color:#023059; font-family: Montserrat;font-weight: 500; font-size: 36px;" id="fraseDisplay">Te ayudamos a elegir una categoría</p>
+    
+        <button id="btnGenerarFrase" style="color:#023059; font-family: Montserrat;font-weight: 500; font-size: 36px;" class="boton m-2 p-4">😭 BOTÓN DEL PÁNICO 😭</button>
+    </div> -->
+
+      <footer>
+        <div class="card m-0" style="max-width: 100%; background-color: #023059;">
+          <div class="row g-0">
+            <div class="col-md-4 p-5">
+             <a href="index.html"> <img src="./imagenes/logofooter.png" class="img-fluid rounded-start" alt="..." style="width: 241px; height: 195px;"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body p-5">
+                <a href="historia.html"><p class="card-text" style="color: white;">HISTORIA</p></a>
+               <a href="menu.html"> <p class="card-text" style="color: white;">MENÚ</p></a>
+               <a href="locales.html"> <p class="card-text" style="color: white;">LOCALES</p></a>
+                <a href="promociones.html"><p class="card-text" style="color: white;">PROMOCIONES</p></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body p-5">
+                <a href="contacto.html"><p class="card-text" style="color: white;">CONTACTO</p></a>
+                <p class="card-text" style="color: white;">3333-3333</p>
+                <p class="card-text" style="color: white;">molina@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+       </footer>
+
+      
+      
+      <!-- <script>
+      
+      var frases = [
+          "CAFETERÍA",
+          "PANADERÍA",
+          "BAR",
+          "DE TODO UN POQUITO",
+          "ALMUERZOS",
+          "BEBIDAS FRÍAS Y JUGOS"
+      ];
+      
+      
+      function generarFraseAleatoria() {
+          var indiceAleatorio = Math.floor(Math.random() * frases.length);
+          var fraseAleatoria = frases[indiceAleatorio];
+
+          document.getElementById("fraseDisplay").textContent = fraseAleatoria;
+      }
+       var boton = document.getElementById("btnGenerarFrase");
+      boton.addEventListener("click", generarFraseAleatoria);
+
+      </script> -->
+        
+      </body>
+      </html>
+    
+
+      
+     
+
+   
+    
+
+    
