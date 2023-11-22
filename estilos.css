@@ -625,7 +625,7 @@ background-color:#023059;
     .img-fluid.contacto {
       margin-top: 215px;
     }
-    
+
     
     
 
@@ -706,7 +706,7 @@ background-color:#023059;
   }
   
   .carousel-inner{
-    margin-top: 350px;
+    margin-top: 50px;
   }
 
   .card-text.local{
@@ -714,9 +714,9 @@ background-color:#023059;
     font-size: 44px;
   }
 
-  /* .card-text {
+  .card-text {
     display: flex;
-  } */
+  }
 
   .img-fluid.contacto {
     margin-top: 315px;
@@ -739,10 +739,24 @@ background-color:#023059;
     margin: 20px;
   }
 
-
+  
+.card {
+  border-radius: 0;
+  border: 0px;
+  margin-left: 10px;
+  margin-right: 20px;
+  max-width: 500px; 
+  width: 80%;
+  margin-bottom: 20px;
+  
+}
+.card-text.promo {
+  font-size: 10px;
  
 
   }
+
+    }
 
  
 
